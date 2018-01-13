@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Module Test - <%= component_name %></title>
+    <link href="../../lib/res-base/css/style.css" rel="stylesheet" />
+    <link href="../../src/<%= component_name %>/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="../../lib/regularjs/dist/regular.js"></script>
+    <script src="../../lib/nej/src/define.js?pool=../../lib/"></script>
+    <script>
+        NEJ.define([
+            '../../src/<%= component_name %>/module.js',
+            '../mock.js',
+            './cases.js'
+        ], function(m, mock, cases) {
+            // FIXME 根据实际情况打开以下注释开关
+            // location.redirect('/m/term/signin/?tid=123');
+            // mock.setup('case-1', cases);
+            m.build({
+                parent: document.body
+            });
+        });
+    </script>
+</body>
+
+</html>
