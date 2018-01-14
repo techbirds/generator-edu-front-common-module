@@ -1,5 +1,4 @@
-# generator-edu-front-common-module [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> A edu front common module
+# generator-edu-front-common-module [![Build Status][travis-image]][travis-url]
 
 ## Installation
 
