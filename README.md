@@ -1,5 +1,44 @@
 # generator-edu-front-common-module [![Build Status][travis-image]][travis-url]
 
+## Structure
+
+```
+.
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── bower.json
+├── package.json
+├── res
+│   └── module-{{args.module}}
+├── src
+│   ├── config.js
+│   ├── setting.js
+│   └── {{args.name}}
+│       ├── index.html
+│       ├── index.js
+│       ├── index.scss
+│       ├── module.htm
+│       └── module.js
+├── test
+│   ├── app
+│   │   ├── app.html
+│   │   └── setting.json
+│   ├── meta
+│   ├── mock.js
+│   ├── test.html
+│   ├── test.js
+│   ├── util.js
+│   └── {{args.name}}
+│       ├── cases.js
+│       ├── test.html
+│       └── test.js
+└── tutorials
+    └── {{args.name}}
+        └── demo.html
+```
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-edu-front-common-module using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
